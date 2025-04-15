@@ -1,19 +1,22 @@
-import './App.css'
 import AboutMe from './components/AboutMe'
-import HeaderNav from './components/Header'
+import Nav from './components/Nav'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
+import Educations from './components/Educations'
 
 function App() {
 
   return (
     <>
-      <HeaderNav/>
-      <AboutMe/>
-      <Projects/>
-      <Skills/>
-      <Footer/>
+      <main className='scroll-smooth flex-col font-mono'>
+        <Nav/>
+        <AboutMe/>
+        <Educations/>
+        <Projects/>
+        <Skills/>
+        <Footer/>
+      </main>
     </>
   )
 }

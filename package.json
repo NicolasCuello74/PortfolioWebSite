@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.14",
+    "motion": "^12.6.3",
+    "motion-plus": "^0.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "standard": "^17.1.2",

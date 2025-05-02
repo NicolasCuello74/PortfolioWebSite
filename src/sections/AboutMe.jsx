@@ -1,42 +1,26 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef } from "react";
 import imgUrl from "../assets/perfil2.jpg";
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
+
 
 const AboutMe = () => {
-  const containerRef = useRef(null);
-  const [inView, setInView] = useState(false)
-
-  useEffect(() => {
-    // Configuración del Intersection Observer
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setInView(entry.isIntersecting); // Cambia el estado si el elemento está en el viewport
-      },
-      { threshold: 0.5 } // 50% del elemento debe ser visible
-    );
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    } else {
-      console.error("El containerRef está vacío");
-    }
-
-    return () => {
-      if (containerRef.current) observer.unobserve(containerRef.current);
-    };
-  }, []);
-
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { amount: "some" });
   return (
     <>
       <section
         id="AboutMe"
+        ref={sectionRef}
         className="w-full h-dvh flex flex-col items-center lg:flex lg:flex-row justify-around p-10 space-x-10 overflow-hidden"
-        ref={containerRef}
       >
-        <motion.div className='container pt-10 px-4 lg:w-1/4 content-center'
-          initial={{ x: -1280 }}
-          animate={inView? { x: 0 } : {x:-1280}} // Reanima cuando está en el viewport
-          transition={{ duration: 3 }}
+
+        <motion.div
+          className="container pt-10 px-4 lg:w-1/4 content-center overflow-hidden"
+          initial={{ x: -500, opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : { x: -500, opacity: 0 }}
+          transition={{ duration: 1.5 }}
         >
+
           <p className="lg:text-2xl mb-4 max-md:text-sm">Yo soy</p>
           <hr />
           <br />
@@ -52,10 +36,11 @@ const AboutMe = () => {
             alt="perfil"
           />
         </div>
-        <motion.div className='container px-4 lg:w-2/4'
-          initial={{ x: 1280 }}
-          animate={inView? { x: 0 } : {x:1280}} // Reanima cuando está en el viewport
-          transition={{ duration: 3 }}
+        <motion.div
+          className="container px-4 lg:w-2/4 overflow-hidden"
+          initial={{ x: 500, opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : { x: 500, opacity: 0 }}
+          transition={{ duration: 1.5 }}
         >
           <h1 className="text-sm lg:text-lg text-justify"
           >

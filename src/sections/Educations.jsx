@@ -32,7 +32,7 @@ export default function Educations() {
             <div className="absolute w-16 h-2 bg-white top-1/2 left-full transform -translate-y-1/2 hidden lg:block"></div>
           </div>
           <div className="group relative">
-            <div className="max-md:w-12 max-md:h-12 max-md:text-[12px] text-center w-24 h-24 bg-gray-500 rounded-full flex items-center justify-center text-white text-center font-bold">Git & GitHub</div>
+            <div className="max-md:w-12 max-md:h-12 max-md:text-[12px] text-center w-24 h-24 bg-gray-500 rounded-full flex items-center justify-center text-white font-bold">Git & GitHub</div>
             <div className="absolute w-48 text-sm text-gray-300 bg-gray-800 p-2 rounded opacity-0 group-hover:opacity-100 transition hidden lg:block">
                 Construí proyectos con componentes reautilizables y escalables. Manejo de estados y uso de hooks para mejorar el rendimiento.
             </div>
@@ -53,14 +53,14 @@ export default function Educations() {
             <div className="absolute w-16 h-2 bg-white top-1/2 left-full transform -translate-y-1/2 hidden lg:block"></div>
           </div>
           <div className="group relative">
-            <div className="max-md:w-12 max-md:h-12 max-md:text-[12px] text-center w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center text-white text-center font-bold">PostgreSQL</div>
+            <div className="max-md:w-12 max-md:h-12 max-md:text-[12px] text-center w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">PostgreSQL</div>
             <div className="absolute w-48 text-sm text-gray-300 bg-gray-800 p-2 rounded opacity-0 group-hover:opacity-100 transition hidden lg:block">
                 Construí proyectos con componentes reautilizables y escalables. Manejo de estados y uso de hooks para mejorar el rendimiento.
             </div>
             <div className="absolute w-16 h-2 bg-white top-1/2 left-full transform -translate-y-1/2 hidden lg:block"></div>
           </div>
           <div className="group relative">
-            <div className="max-md:w-12 max-md:h-12 max-md:text-[12px] text-center w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center text-white  text-center font-bold">Bootstrap & Taildwind</div>
+            <div className="max-md:w-12 max-md:h-12 max-md:text-[12px] text-center w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">Bootstrap & Taildwind</div>
             <div className="absolute w-48 text-sm text-gray-300 bg-gray-800 p-2 rounded opacity-0 group-hover:opacity-100 transition hidden lg:block">
                 Aprendí a dominar y aprovechar las ventajas de poder crear interfaces modernas, optimizadas y flexibles.
             </div>

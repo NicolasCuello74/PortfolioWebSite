@@ -29,18 +29,18 @@ const AboutMe = () => {
     <>
       <section
         id="AboutMe"
-        className="h-[944px] w-full lg:flex justify-around items-center p-10 space-x-10"
+        className="w-full h-dvh flex flex-col items-center lg:flex lg:flex-row justify-around p-10 space-x-10 overflow-hidden"
         ref={containerRef}
       >
-        <motion.div className='container px-4 lg:w-1/4'
+        <motion.div className='container pt-10 px-4 lg:w-1/4 content-center'
           initial={{ x: -1280 }}
           animate={inView? { x: 0 } : {x:-1280}} // Reanima cuando está en el viewport
           transition={{ duration: 3 }}
         >
-          <p className="lg:text-4xl mb-4 sm:text-2xl">Yo soy</p>
+          <p className="lg:text-2xl mb-4 max-md:text-sm">Yo soy</p>
           <hr />
           <br />
-          <h1 className="lg:text-6xl sm:text-4xl"
+          <h1 className="lg:text-4xl max-md:text-lg"
           >
           Nicolas Cuello
           </h1>
@@ -57,15 +57,13 @@ const AboutMe = () => {
           animate={inView? { x: 0 } : {x:1280}} // Reanima cuando está en el viewport
           transition={{ duration: 3 }}
         >
-          <h1 className="lg:text-xl text-justify  md:text-sm"
+          <h1 className="text-sm lg:text-lg text-justify"
           >
-            Soy un desarrollador full stack en Javascript, formado mediante un
+            Soy un desarrollador full stack, formado mediante un
             bootcamp de más de 800 horas y con varios proyectos que me
             permitieron la práctica necesaria sobre los contenidos adquiridos.
-            Con una trayectoria como líder y asesor en el área de atención al
-            cliente dentro de una empresa que ofrece servicios de outsourcing,
-            tercerización de procesos y soluciones tecnológicas. Actualmente
-            trabajando para el área de soporte de Tecnología. Esta experiencia
+            Con trayectoria dentro de una empresa que ofrece servicios de BPO,
+            tercerización de procesos y soluciones tecnológicas. Esta experiencia
             me ha permitido desarrollar habilidades claves del trabajo en
             equipo y análisis de datos masivos.
           </h1>

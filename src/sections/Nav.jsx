@@ -45,7 +45,9 @@ const Nav = () => {
                 <li className='list-none block w-full lg:inline-block lg:w-auto'>
                   <a href="#Skills" className='relative lg:before:absolute lg:before:-bottom-1 lg:before:left-0 lg:before:right-0 lg:before:h-px lg:before:bg-black lg:hover:before:w-full lg:before:animate-lineOut lg:hover:before:animate-lineIn'>Habilidades</a>
                 </li>
-                <button className='relative lg:before:absolute lg:before:-bottom-1 lg:before:left-0 lg:before:right-0 lg:before:h-px lg:before:bg-black lg:hover:before:w-full lg:before:animate-lineOut lg:hover:before:animate-lineIn'>Descargar CV</button>
+                <button className='relative lg:before:absolute lg:before:-bottom-1 lg:before:left-0 lg:before:right-0 lg:before:h-px lg:before:bg-black lg:hover:before:w-full lg:before:animate-lineOut lg:hover:before:animate-lineIn'> <a href="public/CVNICOLASCUELLO.docx.pdf" download="NicolasCuello_cv.pdf" className="block w-full h-full">
+    Descargar CV
+                </a></button>
               </ul>
             </div>
             <ul className='space-x-3'>

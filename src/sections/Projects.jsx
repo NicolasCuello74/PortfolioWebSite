@@ -6,19 +6,19 @@ const Projects = () => {
     {
       title: 'Animaladas',
       bgImage: 'https://res.cloudinary.com/decdqjawu/image/upload/v1744987255/logoanimaladas_g1jsjr.png',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere explicabo eum nihil...',
+      description: 'Express.js · Chartjs · React.js · nodemailer · Bootstrap · Redux.js · Node.js · JavaScript · JsonWebToken · Cloudinary · Google Maps · AJAX · CRUD',
       hRef:'https://animaladas03.vercel.app/',
     },
     {
       title: 'Driver APP',
       bgImage: 'https://res.cloudinary.com/decdqjawu/image/upload/v1746208950/ChatGPT_Image_2_may_2025_03_02_16_p.m._t7rxkj.png',
-      description: 'Descripción del segundo proyecto.',
+      description: 'PostgreSQL · React.js · CSS puro · Redux.js · Node.js · Sequelize.js · JavaScript · AJAX · API Rest',
       hRef:'https://frontend-drivers.vercel.app/',
     },
     {
       title: 'Pelis Films',
       bgImage: 'https://res.cloudinary.com/decdqjawu/image/upload/v1714514493/Captura_de_pantalla_2024-04-30_184335_wxyiro.png',
-      description: 'Descripción del tercer proyecto.',
+      description: 'React.js · API Rest · Bootstrap · JavaScript · axios · Npm (Software) · GitHub · Git · vercel · Auth0',
       hRef:'https://alkemy-app.vercel.app/',
     },
   ]

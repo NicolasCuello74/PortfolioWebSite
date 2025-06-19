@@ -7,19 +7,22 @@ const Projects = () => {
       title: 'Animaladas',
       bgImage: 'https://res.cloudinary.com/decdqjawu/image/upload/v1744987255/logoanimaladas_g1jsjr.png',
       description: 'Express.js · Chartjs · React.js · nodemailer · Bootstrap · Redux.js · Node.js · JavaScript · JsonWebToken · Cloudinary · Google Maps · AJAX · CRUD',
-      hRef:'https://animaladas03.vercel.app/',
+      hRefRep:'https://github.com/NicolasCuello74/animaladas-g03',
+      hRefProject:'https://animaladas03.vercel.app/',
     },
     {
       title: 'Driver APP',
       bgImage: 'https://res.cloudinary.com/decdqjawu/image/upload/v1746208950/ChatGPT_Image_2_may_2025_03_02_16_p.m._t7rxkj.png',
       description: 'PostgreSQL · React.js · CSS puro · Redux.js · Node.js · Sequelize.js · JavaScript · AJAX · API Rest',
-      hRef:'https://frontend-drivers.vercel.app/',
+      hRefRep:'https://github.com/NicolasCuello74/PI-Drivers',
+      hRefProject:'https://frontend-drivers.vercel.app/',
     },
     {
       title: 'Pelis Films',
       bgImage: 'https://res.cloudinary.com/decdqjawu/image/upload/v1714514493/Captura_de_pantalla_2024-04-30_184335_wxyiro.png',
       description: 'React.js · API Rest · Bootstrap · JavaScript · axios · Npm (Software) · GitHub · Git · vercel · Auth0',
-      hRef:'https://alkemy-app.vercel.app/',
+      hRefRep:'https://github.com/NicolasCuello74/PelisSPA',
+      hRefProject:'https://alkemy-app.vercel.app/',
     },
   ]
 
@@ -35,7 +38,8 @@ const Projects = () => {
             title={project.title}
             bgImage={project.bgImage}
             description={project.description}
-            hRef={project.hRef}/>
+            hRefRep={project.hRefRep}
+            hRefProject={project.hRefProject}/>
         )
 
         )}

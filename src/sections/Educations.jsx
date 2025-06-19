@@ -14,7 +14,6 @@ export default function Educations() {
             <li><strong>CSS Avanzado</strong> - Curso en Desafio Latam</li>
             <li><strong>Analisis de datos</strong> - Curso en Academia BA Emprende</li>
             <li><strong>Fundamentos y primeros pasos del desarrollo frontend</strong> - Argentina programa</li>
-            <li><strong>Tecnicatura superior en seguridad e higiene en el trabajo</strong> - Instituto Tecnico Superior Córdoba</li>
           </ul>
         </div>
         <div className='w-full p-2 border-b-2 border-gray-700'>

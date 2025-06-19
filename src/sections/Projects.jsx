@@ -24,13 +24,11 @@ const Projects = () => {
   ]
 
   return (
-    <section id='Projects' className='w-full h-dvh flex flex-col justify-evenly content-center'>
-      <div className='flex justify-center pt-20 '>
-        <div className='max-w-3xs border-2 rounded-2xl border-amber-50 p-2'>
-          <h1 className='text-gray-500 text-center lg:text-2xl '>MIS PROYECTOS</h1>
-        </div>
+    <section id='Projects' className='w-full h-dvh flex flex-col justify-evenly content-center pt-22 px-4'>
+      <div className='flex w-full border-b-2 border-gray-700 p-2 justify-center pt-20'>
+        <h2 className='text-lg lg:text-3xl font-bold text-center text-white my-2'>🛠️ MIS PROYECTOS</h2>
       </div>
-      <div className='w-full h-lvh max-md:flex max-md:flex-col items-center grid grid-cols-3 content-around justify-items-center gap-4 px-10'>
+      <div className='w-full h-lvh max-md:flex max-md:flex-col items-center grid grid-cols-3 content-around justify-items-center gap-4 px-10 pt-6'>
         {projectData.map((project, index) => (
           <ProjectCard
             key={index}

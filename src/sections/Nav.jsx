@@ -23,7 +23,7 @@ const Nav = () => {
   return (
     <>
       <section className='h-20 w-full'>
-        <nav className={`fixed h-20 w-full backdrop-blur transition-all duration-300 ${sticky ? " shadow-lg bg-gray-600 text-amber-50" : "shadow-none py-8"}`}>
+        <nav className={`fixed z-50 h-20 w-full backdrop-blur transition-all duration-300 ${sticky ? " shadow-lg bg-gray-600 text-amber-50" : "shadow-none py-8"}`}>
           <div className='container mx-auto h-20 flex items-center justify-between px-8 lg:px-10 xl:px-14'>
             <div className='rounded-full w-20 h-20' >
               <img src="https://res.cloudinary.com/decdqjawu/image/upload/t_Profile/v1743723543/ChatGPT_Image_3_abr_2025_20_35_52_i6p0lf.png" alt="Portfolio image" />
@@ -45,9 +45,11 @@ const Nav = () => {
                 <li className='list-none block w-full lg:inline-block lg:w-auto'>
                   <a href="#Skills" className='relative lg:before:absolute lg:before:-bottom-1 lg:before:left-0 lg:before:right-0 lg:before:h-px lg:before:bg-black lg:hover:before:w-full lg:before:animate-lineOut lg:hover:before:animate-lineIn'>Habilidades</a>
                 </li>
-                <button className='relative lg:before:absolute lg:before:-bottom-1 lg:before:left-0 lg:before:right-0 lg:before:h-px lg:before:bg-black lg:hover:before:w-full lg:before:animate-lineOut lg:hover:before:animate-lineIn'> <a href="public/CVNICOLASCUELLO.docx.pdf" download="NicolasCuello_cv.pdf" className="block w-full h-full">
-    Descargar CV
-                </a></button>
+                <button className='relative lg:before:absolute lg:before:-bottom-1 lg:before:left-0 lg:before:right-0 lg:before:h-px lg:before:bg-black lg:hover:before:w-full lg:before:animate-lineOut lg:hover:before:animate-lineIn'>
+                  <a href="https://collection.cloudinary.com/decdqjawu/3781ae7cb14e8bc2403ddb77cfe3f762" target='_blank' download="NicolasCuello_cv.pdf" className="block w-full h-full">
+                  Descargar CV
+                  </a>
+                </button>
               </ul>
             </div>
             <ul className='space-x-3'>
